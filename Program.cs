@@ -53,7 +53,7 @@ namespace Skalierungs
             int k=0;
 
             double min = 0.4+2.0*b;
-            Console.WriteLine("{0:F2} {1:F2}", min*100, v);
+            Console.WriteLine("{0:F4} {1:F2}", min/10, v);
             for (int i=0; i<2*n;i++)
             {              
                 double alpha = 3.0*pi/2.0 + i*delta;
@@ -69,7 +69,7 @@ namespace Skalierungs
                 }
 
                 //Console.WriteLine("Winkel {0:F2} Höhe {1:F2} Volumen {2:F2}", alpha*180.0/pi, h, v);
-                Console.WriteLine("{0:F2} {1:F2}", (min-h)*100.0, v);
+                Console.WriteLine("{0:F4} {1:F2}", (min-h)/10.0, v);
             }
         }
         static void Main(string[] args)
